@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(110, 25, 25);
+    font-family: 'Eczar', serif;
+    padding-left: 15px;
+}
+
+/*Text Style Information */
+
+h1 {
+    color: rgb(199, 150, 87);
+    text-align:center;
+    font-style:oblique;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(238, 164, 121);
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: rgb(175, 126, 69);
+    font-size: 20px;
+}
+
+/* Image Style Information */
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    height: auto;
+    width: auto;
+}
+
+
+/* Link Style Information */
+
+a {
+    font-size: 20px;
+}
+
+a:link, a:visited{
+    color: rgb(133, 42, 42);
+}
+
+a:hover {
+    color: rgb(128, 21, 21);
+}
+
+a:active{
+    color:rgb(51, 6, 6);
+}
+
+/* Header Style Information*/
+
+header{ 
+    background-color: rgb(54, 19, 19);
+    outline-style: 
+    border: 1px;
+}
+
+#header-section {
+    max-width: 100%;
+    height: 59px;
+    padding-bottom:10px;
+    margin: center;
+}
+
+nav {
+    float: left;
+}
+
+#menu-icon {
+    display: hidden;
+    width: 50px;
+    height: 50px;
+    background: rgb(182, 38, 38) no-repeat center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 200%;
+    font-weight:700;
+    display: inline-block;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color:rgb(199, 150, 87)
+}
+
+nav ul li a:hover {
+    color: #571e2a;
+}
+
+/* Link style Information*/
+
+a {
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color:rgb(195, 153, 91)
+}
+
+a:hover {
+    color: rgb(153, 60, 60);
+}
+
+a:active{
+    color:rgb(182, 68, 68);
+}
+
+/* Breakpoint */
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+    
+    nav {
+        background-color: rgb(110, 25, 25) ; 
+        padding:5px;
+        border: 3px solid rgb(110, 25, 25)
+    }
+    nav ul li a {
+        font-size:80%;
+        display:inline-block;
+        padding-top: 25px;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        z-index: 100;
+        position: absolute;
+        padding: 20px;
+        border: 3px solid rgb(110, 25, 25);
+    }
+
+    nav:hover ul {
+        display: inline-block;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
